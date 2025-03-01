@@ -22,8 +22,8 @@ Installation from source:
 ```sh
 $ apt install python3-dev -y
 $ pip install Cython
+$ sed -i "s/trunk/v0.0.1-dev0/g" wireguard_py/__init__.py
 $ python setup.py sdist
-$ sed -i "s/trunk/v0.0.1-dev/g" wireguard_py/__init__.py
 $ pip install -e .
 ```
 
