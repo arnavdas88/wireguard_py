@@ -102,3 +102,6 @@ ENV/
 
 # Release scripts
 release_prep.sh
+
+# Intermediate Cythonize File
+wireguard_py/wireguard_py.c
