@@ -13,9 +13,20 @@ cython module exists to make this possible in Python without the additional over
 
 Installation is performed via pip:
 
+```sh
+$ pip install wireguard-py
 ```
-pip install wireguard-py
+
+Installation from source:
+
+```sh
+$ apt install python3-dev -y
+$ pip install Cython
+$ python setup.py sdist
+$ sed -i "s/trunk/v0.0.1-dev/g" wireguard_py/__init__.py
+$ pip install -e .
 ```
+
 
 ## Using wireguard_py
 
