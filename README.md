@@ -4,6 +4,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![PyPI](https://img.shields.io/pypi/v/wireguard_py)](https://pypi.org/project/wireguard_py/)
 [![Downloads](https://pepy.tech/badge/wireguard_py/week)](https://pepy.tech/project/wireguard_py/week)
+[![Python Test](https://github.com/arnavdas88/wireguard_py/actions/workflows/python-test.yml/badge.svg)](https://github.com/arnavdas88/wireguard_py/actions/workflows/python-test.yml)
 
 For most use cases, the Wireguard CLI is all one needs to set up a working Wireguard tunnel.  However, for more complex scenarios (e.g. the creation and maintenance of a
 Wireguard mesh involving many thousands of peers), using a high-level language to manage all of the peer configuration and monitoring make life much easier.  The `wireguard_py`
