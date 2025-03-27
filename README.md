@@ -25,6 +25,9 @@ $ apt install python3-dev -y
 $ pip install Cython
 $ sed -i "s/trunk/v0.0.1-dev0/g" wireguard_py/__init__.py
 $ python setup.py sdist
+$ python setup.py build_ext --inplace
+$ python setup.py build
+$ python setup.py install
 $ pip install -e .
 ```
 

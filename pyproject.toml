@@ -12,7 +12,7 @@ authors = [
 ]
 description = "Cython library to manage Wireguard configuration"
 requires-python = ">=3"
-dependencies = ["click"]
+dependencies = ["click", "pyroute2"]
 classifiers = [
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
