@@ -12,7 +12,7 @@ from contextlib import suppress
 from typing import TYPE_CHECKING, Iterator
 
 if TYPE_CHECKING:
-    from .wireguard_config import WireguardConfig
+    from wireguard_py.contrib.WireguardConfig import WireguardConfig
 
 
 class WireguardDevice(ABC):
@@ -30,8 +30,8 @@ class WireguardDevice(ABC):
 
     @classmethod
     def get(cls, ifname: str) -> WireguardDevice:
-        from .WireguardNetlink import WireguardNetlinkDevice
-        from .WireguardUAPI import WireguardUAPIDevice
+        from wireguard_py.contrib.WireguardNetlink import WireguardNetlinkDevice
+        from wireguard_py.contrib.WireguardUAPI import WireguardUAPIDevice
 
         with suppress(FileNotFoundError):
             return WireguardUAPIDevice(ifname)
@@ -39,8 +39,8 @@ class WireguardDevice(ABC):
 
     @classmethod
     def list(cls) -> Iterator[WireguardDevice]:
-        from .WireguardNetlink import WireguardNetlinkDevice
-        from .WireguardUAPI import WireguardUAPIDevice
+        from wireguard_py.contrib.WireguardNetlink import WireguardNetlinkDevice
+        from wireguard_py.contrib.WireguardUAPI import WireguardUAPIDevice
 
         yield from WireguardNetlinkDevice.list()
         yield from WireguardUAPIDevice.list()

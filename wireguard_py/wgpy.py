@@ -24,7 +24,7 @@ This is a dummy CLI intended to test the functionality of the wireguard cython
 module (a.k.a. wireguard_py), located in this code path, as well as to serve as
 an example for the use of this module.  It is not intended in any way to act as
 a replacement for the official wireguard cli, distributed as part of the
-wireguard_tools package.
+native package.
 """
 
 

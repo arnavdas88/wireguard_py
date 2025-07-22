@@ -11,9 +11,9 @@ from typing import Iterator
 
 import pyroute2
 
-from .WireguardConfig import WireguardConfig, WireguardPeer
-from .WireguardDevice import WireguardDevice
-from .WireguardKey import WireguardKey
+from wireguard_py.contrib.WireguardConfig import WireguardConfig, WireguardPeer
+from wireguard_py.contrib.WireguardDevice import WireguardDevice
+from wireguard_py.contrib.WireguardKey import WireguardKey
 
 
 class WireguardNetlinkDevice(WireguardDevice):

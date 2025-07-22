@@ -12,9 +12,9 @@ from ipaddress import ip_address, ip_interface
 from pathlib import Path
 from typing import TYPE_CHECKING, Iterator
 
-from .WireguardConfig import WireguardConfig, WireguardPeer
-from .WireguardDevice import WireguardDevice
-from .WireguardKey import WireguardKey
+from wireguard_py.contrib.WireguardConfig import WireguardConfig, WireguardPeer
+from wireguard_py.contrib.WireguardDevice import WireguardDevice
+from wireguard_py.contrib.WireguardKey import WireguardKey
 
 if TYPE_CHECKING:
     import os

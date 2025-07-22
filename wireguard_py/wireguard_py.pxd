@@ -52,7 +52,7 @@ cdef extern from "netinet/in.h":
         int sin6_scope_id
 
 
-cdef extern from "wireguard_py/wireguard_tools/wireguard.h":
+cdef extern from "wireguard_py/native/wireguard.h":
     ctypedef unsigned char[32] wg_key
     ctypedef char[45] wg_key_b64_string
 

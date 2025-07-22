@@ -22,9 +22,8 @@ from typing import Any, Sequence, TextIO, TypeVar, Union
 from attrs import asdict, define, field
 from attrs.converters import optional
 from attrs.setters import convert as setters_convert
-# from segno import QRCode, make_qr
 
-from .WireguardKey import WireguardKey
+from wireguard_py.contrib.WireguardKey import WireguardKey
 
 SimpleJsonTypes = Union[str, int, float, bool, None]
 T = TypeVar("T")
@@ -328,7 +327,3 @@ class WireguardConfig:
             conf.append(f"options ndots:{opt_ndots}")
         conf.append("")
         return "\n".join(conf)
-
-    # def to_qrcode(self) -> QRCode:
-    #     config = self.to_wgconfig(wgquick_format=True)
-    #     return make_qr(config, mode="byte", encoding="utf-8", eci=True)

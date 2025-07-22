@@ -23,9 +23,9 @@ extensions = [
         name="wireguard_py.wireguard_py",
         sources=[
             "wireguard_py/wireguard_py.c",
-            "wireguard_py/wireguard_tools/wireguard.c",
+            "wireguard_py/native/wireguard.c",
         ],
-        depends=["wireguard_py/wireguard_tools/wireguard.h"],
+        depends=["wireguard_py/native/wireguard.h"],
         include_dirs=["."],
         library_dirs=["/usr/lib"],
         libraries=["rt"],
