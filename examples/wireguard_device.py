@@ -40,7 +40,11 @@ def main():
     device = WireguardDevice.get("wg0")
     wgconfig = device.get_config()
     device.set_config(wgconfig)
-    pass
+
+    # Remove Wireguard iface
+    wg_ifc = ipr.link_lookup(ifname="wg0")
+    if wg_ifc:
+        ipr.link("del", index=wg_ifc[0])
 
 if __name__ == "__main__":
     main()
