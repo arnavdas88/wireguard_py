@@ -42,6 +42,10 @@ class WireguardKey:
         public_bytes = wg.get_pub_key(self.keydata)
         return WireguardKey(public_bytes)
 
+    def private_key(self) -> WireguardKey:
+        """Derive private key from private key."""
+        return self
+
     def __bool__(self) -> bool:
         return int.from_bytes(self.keydata, "little") != 0
     
