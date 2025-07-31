@@ -37,9 +37,4 @@ setup(
     cmdclass={"sdist": sdist_cythonize},
     include_package_data=False,
     ext_modules=extensions,
-    entry_points={
-        "console_scripts": [
-            "wgpy = wireguard_py.wgpy:cli",
-        ],
-    },
 )
