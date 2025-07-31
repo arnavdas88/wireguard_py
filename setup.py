@@ -37,4 +37,7 @@ setup(
     cmdclass={"sdist": sdist_cythonize},
     include_package_data=False,
     ext_modules=extensions,
+    requires=[
+        "attrs"
+    ]
 )
