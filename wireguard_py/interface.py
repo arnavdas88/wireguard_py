@@ -39,7 +39,7 @@ class WireGuardInterface:
 
     @property
     def status(self, ) -> bool:
-        return True
+        return bool(self._ipr_.link_lookup(ifname=self.name))
 
     def get_used_ips(self, ) -> List[IPv4Address | IPv6Address]:
         __list__ = []
