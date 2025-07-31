@@ -24,7 +24,8 @@ class WireGuardInterface:
                  peers: Optional[Dict[str, Peer]] = None,
                  keypair: Optional[WireguardKey] = None,
                  endpoint: Optional[Endpoint] = None,
-                 ip : Optional[IPv4Address | IPv6Address] = None
+                 ip : Optional[IPv4Address | IPv6Address] = None,
+                 ipr : Optional[pyroute2.IPRoute] = None
         ):
         self.name : str = interface_name
         self.cidr : IPv4Network | IPv6Network = cidr
@@ -33,7 +34,7 @@ class WireGuardInterface:
         self.endpoint : Optional[Endpoint] = endpoint if endpoint else Endpoint()
         self.ip : Optional[IPv4Address | IPv6Address] = ip
 
-        self._ipr_ = pyroute2.IPRoute()
+        self._ipr_ = ipr if ipr else pyroute2.IPRoute()
         self._status_ : bool = False
 
     @property
