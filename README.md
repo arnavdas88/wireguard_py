@@ -41,7 +41,7 @@ An quick example of setting up a wireguard connection and peering:
 import ipaddress
 import pyroute2
 import wireguard_py
-from wireguard_py.wireguard_common import Endpoint
+from wireguard_py.peers import Endpoint
 
 # Create the wireguard interface
 ipr = pyroute2.IPRoute()

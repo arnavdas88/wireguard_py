@@ -1,7 +1,7 @@
 import ipaddress
 import pyroute2
 import wireguard_py
-from wireguard_py.wireguard_common import Endpoint
+from wireguard_py.peers import Endpoint
 
 #.               My Private Key                                   My Public Key
 INTERFACE_KEY = (b'yO+XDIp4FP7jqjTJkYQuN6VI+r9heqoUjVSVvoGwf3w=', b'q3tCMnHy+jtQiEGNDRrD+ggYihUpRMRo3Er9Lu+OaHI=')

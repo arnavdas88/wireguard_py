@@ -41,7 +41,7 @@ from ipaddress import IPv4Address, IPv6Address, IPv4Network, IPv6Network, ip_add
 from libc.stdlib cimport free, calloc
 from typing import List, Optional, Set
 
-from wireguard_py.wireguard_common import Endpoint, IPAddress, IPNetwork, Peer
+from wireguard_py.peers import Endpoint, IPAddress, IPNetwork, Peer
 
 def gen_priv_key() -> bytes:
     """

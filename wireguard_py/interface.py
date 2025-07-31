@@ -3,10 +3,8 @@ from typing import Dict, List, Optional
 
 import pyroute2
 import wireguard_py
-from wireguard_py.wireguard_common import Endpoint, Peer
-from wireguard_py.contrib.WireguardDevice import WireguardDevice
-from wireguard_py.contrib.WireguardConfig import WireguardPeer
-from wireguard_py.contrib.WireguardKey import WireguardKey
+from wireguard_py.peers import Endpoint, Peer
+from wireguard_py.keys import WireguardKey
 
 
 class WireGuardInterface:

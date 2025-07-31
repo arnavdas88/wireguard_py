@@ -33,7 +33,6 @@ class Peer:
     last_handshake_time: Optional[int] = None
     rx_bytes: Optional[int] = None
     tx_bytes: Optional[int] = None
-    # ipaddress: Optional[IPAddress] = None
     dns: Optional[List[IPAddress]] = None
 
     def __str__(self) -> str:

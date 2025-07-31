@@ -2,7 +2,7 @@ import wireguard_py as wg
 import ipaddress
 import pyroute2
 import wireguard_py
-from wireguard_py.wireguard_common import Endpoint
+from wireguard_py.peers import Endpoint
 from wireguard_py.contrib.WireguardDevice import WireguardDevice
 
 def main():

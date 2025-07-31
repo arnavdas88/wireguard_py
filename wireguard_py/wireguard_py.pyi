@@ -7,7 +7,7 @@ MIT License.
 
 from typing import Optional, Set
 
-from wireguard_py.wireguard_common import Endpoint, IPNetwork, Peer
+from wireguard_py.peers import Endpoint, IPNetwork, Peer
 
 def gen_priv_key() -> bytes: ...
 def get_pub_key(priv_key: bytes) -> bytes: ...
